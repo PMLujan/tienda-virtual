@@ -5,6 +5,7 @@
     --secundariooscuro: rgb(233,288,2);
     --blanco:#ffffff;
     --negro:#000000;
+    --grisclaro:#bcb8b1;
     
     --fuenteprincipal:'Staatliches', cursive; 
 }
@@ -67,10 +68,59 @@ h3{
 .navegacion__enlaces{
     font-size: ;
     font-family: var(--fuenteprincipal);
-    color: rgb(240, 95, 40);;
+    color: rgb(240, 95, 40);
     margin: 0 80px;
 }
 .navegacion__enlaces:hover{
     color: var(--blanco);
     transition: .5s;
+}
+.navegacion-responsive{
+    display: none;
+}
+@media only screen and (max-width:600px){
+    .navegacion{
+        display: none;
+    }
+    .contenedornav{
+        height: 120px;
+        background-color: var(--primariooscuro);
+    }
+    .navegacion-responsive{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 3rem;
+        font-family: var(--fuenteprincipal);
+        line-height: 4;
+        font-weight: bold;
+        color:  rgb(240, 95, 40);
+        height: 130px;
+    }
+    .boton{
+        
+    }
+    .boton i{
+        height: 35px;
+        text-align: center;
+    }
+
+    #check{
+        display: none;
+    }
+    .navegacion-responsive__enlaces{
+        color: var(--primariooscuro);
+        background-color: var(--grisclaro);
+        width:100%;
+        text-align: center;
+        height: 100px;
+        margin-top: -1000px;
+    }
+    .navegacion-responsive__enlaces:hover{
+        color: var(--blanco);
+        transition: .5s;
+    }
+    #check:checked~ .navegacion-responsive__enlaces{
+        margin-top: 0;
+    }
 }

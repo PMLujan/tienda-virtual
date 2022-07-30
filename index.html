@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8f583b2fa5.js" crossorigin="anonymous"></script>
     <title>OnLine Shop</title>
 </head>
 <body>
@@ -16,8 +17,18 @@
         </a>
     </header>
     <nav class="navegacion">
-        <a class="navegacion__enlaces navegacion__enlaces--active"  href="#">Tienda</a>
+        <a class="navegacion__enlaces"  href="#">Tienda</a>
         <a class="navegacion__enlaces"  href="#">Nosotros</a>
     </nav>
+    <div class="contenedornav">
+        <nav class="navegacion-responsive">
+            <input type="checkbox" id="check">
+            <label for="check" class="boton">Menu
+                <i class="fa-solid fa-shop"></i>
+            </label>
+            <a class="navegacion-responsive__enlaces"  href="#">Tienda</a>
+            <a class="navegacion-responsive__enlaces"  href="#">Nosotros</a>
+        </nav>
+    </div>
 </body>
 </html>
