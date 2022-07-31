@@ -6,6 +6,7 @@
     --blanco:#ffffff;
     --negro:#000000;
     --grisclaro:#bcb8b1;
+    --naranja:rgb(240, 95, 40);
     
     --fuenteprincipal:'Staatliches', cursive; 
 }
@@ -123,4 +124,45 @@ h3{
     #check:checked~ .navegacion-responsive__enlaces{
         margin-top: 0;
     }
+}
+/*footer*/
+.foot{
+    background-color: var(--primariooscuro);
+    padding: 1rem;
+    margin: 2rem 0;
+}
+.foot__titulo{
+    font-size: 2rem;
+    font-family:sans-serif;
+    color: var(--naranja)
+}
+/**Grid**/
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+@media only screen and (max-width:768px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .productos{
+        margin: 2rem;
+    }
+}
+/**productos**/
+.productos{
+
+}
+.productos__imagen{
+
+}
+.producto__informacion{
+
+}
+.producto__nombre{
+
+}
+.producto__precio{
+
 }
