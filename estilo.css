@@ -140,6 +140,7 @@ h3{
 .grid{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
 }
 @media only screen and (max-width:768px){
     .grid{
@@ -152,10 +153,12 @@ h3{
 }
 /**productos**/
 .productos{
-
+    background-color: var(--primariooscuro);
+    padding: 1rem;
 }
 .productos__imagen{
 
+    width: 100%;
 }
 .producto__informacion{
 
