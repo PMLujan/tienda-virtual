@@ -20,18 +20,25 @@
         <a class="navegacion__enlaces"  href="index.html">Tienda</a>
         <a class="navegacion__enlaces"  href="nosotros.html">Nosotros</a>
     </nav>
-    <div class="contenedornav">
-        <nav class="navegacion-responsive">
-            <input type="checkbox" id="check">
-            <label for="check" class="boton">Menu
-                <i class="fa-solid fa-shop"></i>
-            </label>
-            <a class="navegacion-responsive__enlaces"  href="index.html">Tienda</a>
-            <a class="navegacion-responsive__enlaces"  href="nosotros.html">Nosotros</a>
-        </nav>
-    </div>
-    <main class="contenedor">
-        <h2>Producto</h2>
+    
+    <main>
+        <h3 class="productotitulo">React Js</h3>
+          <div class="producto">
+            <img class="producto__img" src="img/3.jpg" alt="Imagen del Producto">
+              <div class="descripcion">
+                 <p class="descripcion__p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi amet, magnam optio ad ullam blanditiis repellat ratione modi animi, dolore odit et veritatis quae aliquam quam laborum sunt reprehenderit recusandae!</p>
+                <form class="formulario">
+                <select class="formulario__selectores">
+                    <option class="formulario__option" disabled selected>Selecciona talle</option>
+                    <option class="formulario__option">Small</option>
+                    <option class="formulario__option">Medium</option>
+                    <option class="formulario__option">Large</option>
+                </select>
+                     <input class="formulario__selectores" type="number" placeholder="Cantidad" min="1">
+                     <input class="formulario__boton" type="submit" value="Agregar al carrito">
+               </form>
+             </div>
+          </div>
     </main>
 
     <footer class="foot">
